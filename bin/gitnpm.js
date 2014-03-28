@@ -65,9 +65,9 @@ if (subcommand === "install") {
   npmargv.unshift("install");
 
   console.log(npmargv);
-  var npmproc = child_process.spawn("npm", npmargv);
-  npmproc.stdout.pipe(process.stdout);
-  npmproc.stderr.pipe(process.stderr);
+  var npmproc = child_process.spawn("npm", npmargv, {
+    stdio: ["ignore", process.stdout, process.stderr]
+  });
 }
 
 // setup
