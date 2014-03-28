@@ -24,6 +24,14 @@ $ gitnpm install yosuke-furukawa/gitnpm v0.1.0
 // npm install git+ssh://git@github.com:yosuke-furukawa/gitnpm.git#v0.1.0
 ```
 
+If you have github enterprise, you can set the path using setup command
+
+```shell
+$ gitnpm setup --hostname github.enterprise.com
+$ gitnpm install yosuke-furukawa/gitnpm
+// npm install git+ssh://git@github.enterprise.com:yosuke-furukawa/gitnpm.git#master
+```
+
 Install
 ======================
 
