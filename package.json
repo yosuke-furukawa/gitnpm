@@ -1,0 +1,32 @@
+{
+  "name": "gitnpm",
+  "version": "0.1.0",
+  "description": "npm wrapper for module published to git",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "gitnpm": "bin/gitnpm.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosuke-furukawa/gitnpm"
+  },
+  "keywords": [
+    "git",
+    "npm"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/gitnpm/issues"
+  },
+  "homepage": "https://github.com/yosuke-furukawa/gitnpm",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "optimist": "^0.6.1",
+    "osenv": "0.0.3",
+    "yamljs": "^0.1.4"
+  }
+}
