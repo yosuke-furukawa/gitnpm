@@ -60,7 +60,7 @@ if (subcommand === "install") {
   gnpmrc.library = library;
   gnpmrc.version = version;
   giturl = _.template(giturl, gnpmrc);
-  var npmargv = argv._.slice(3);
+  var npmargv = process.argv.slice(3);
   npmargv.unshift(giturl);
   npmargv.unshift("install");
 
