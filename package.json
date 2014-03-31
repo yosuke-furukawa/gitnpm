@@ -1,6 +1,6 @@
 {
   "name": "gitnpm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "npm wrapper for module published to git",
   "main": "index.js",
   "scripts": {
