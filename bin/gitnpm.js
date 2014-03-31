@@ -60,11 +60,14 @@ if (subcommand === "install") {
   gnpmrc.library = library;
   gnpmrc.version = version;
   giturl = _.template(giturl, gnpmrc);
-  var npmargv = process.argv.slice(3);
+  var npmargv = process.argv;
+  // clear node $0 install
+  npmargv.splice(0, 3);
+  npmargv.splice(npmargv.indexOf(library), 1);
+  if (npmargv.indexOf(version) >= 0) npmargv.splice(npmargv.indexOf(version), 1);
   npmargv.unshift(giturl);
   npmargv.unshift("install");
 
-  console.log(npmargv);
   var npmproc = child_process.spawn("npm", npmargv, {
     stdio: ["ignore", process.stdout, process.stderr]
   });
