@@ -1,7 +1,7 @@
 gitnpm
 ======================
 
-npm wrapper for not npm modules
+npm wrapper for unpublished npm modules
 
 npm could install library from some git repositories.
 but npm user should set the library like this.
